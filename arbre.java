@@ -1,5 +1,4 @@
-public class Arbre{
-
+public class arbre{
 
     private static class Node {
 
@@ -13,7 +12,7 @@ public class Arbre{
 
         public String getElement() { return element; }
 
-        public String getNext () { return next; }
+        public Node getNext () { return next; }
 
         public void setElement (String newElement) { element = newElement; }
 
@@ -21,7 +20,7 @@ public class Arbre{
 
 
 
-        public static String toString() {
+        public String toString() {
             return element.toString();
             
         }
@@ -31,38 +30,49 @@ public class Arbre{
 
 
 
-    private Arbre (){
-        private Node head;
-        private long size;
-
-        public Arbre (){
-            head = null;
-            size = 0;
-        }
-    }
-
-    
-
-
-
-
-
-
-
+    private Node head;
     private long size;
 
+    public arbre (){
+        head = null;
+        size = 0;
+    }
+
+    public String toString(){
+        return head.toString();
+    }
+
+
+
+
+
+
+
+    //private long size;
+
     
     
     
-/*  private Arbre(){
+/**  private Arbre(){
         header = new Node(null, null, null);
         trailer = new Node(null, header, null);
         header.setNext(trailer);
         size = 0;
-    }  */
+    }  **/
 
 
     public static void main(String[] args){
 
+
+        arbre maListe = new arbre();
+
+        
+		
     }
 }
+
+
+
+
+
+
